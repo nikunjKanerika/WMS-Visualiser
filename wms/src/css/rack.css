@@ -1,0 +1,7 @@
+.rack {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    margin-right: 90px;
+    border: 2px solid #666666;
+}

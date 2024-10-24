@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Layout Styling */
+.wms {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Panel Title Styling */
+.panel-title {
+    color: #4444AA;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 4px;
+}
+
+/* Toggle Button Styling */
+.panel-toggle {
+    position: absolute;
+    top: 10px;
+    background-color: #ff5f3d;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+/* Specific positions for the toggle buttons */
+.left-panel-toggle.collapsed {
+    left: 10px; /* Position when the left panel is collapsed */
+}
+
+.left-panel-toggle.expanded {
+    left:1px; 
+    
+}
+
+.right-panel-toggle {
+    right: 30px;
+}
+
+/* Left Panel Styling */
+.left-panel {
+    transition: width 0.5s ease, opacity 0.5s ease;
+    width: 20%;
+    padding: 20px;
+    height: 100vh;
+    background-color: #efefef;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.left-panel.expanded {
+    width: 20%;
+    opacity: 1;
+}
+
+.left-panel.collapsed {
+    width: 20px;
+    height: 100vh;
+    padding: 0; /* Remove padding to fully collapse */
+    opacity: 0;
+    overflow: hidden; /* Hide content when collapsed */
+}
+
+/* Center Panel Styling */
+.center-panel {
+    width: 53%;
+    flex-grow: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    overflow-y: scroll;
+}
+
+/* Right Panel Styling */
+.right-panel {
+    transition: width 0.5s ease, opacity 0.5s ease;
+    /* background-color: lightgray; */
+    width: 37%;
+    padding: 20px;
+    height: 100vh;
+    box-sizing: border-box;
+    border-left: 1px solid #ccc;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.right-panel.expanded {
+    width: 30%; /* Adjusted width when expanded */
+    opacity: 1;
+}
+
+.right-panel.collapsed {
+    width: 0;
+    padding: 0; /* Remove padding to fully collapse */
+    opacity: 0;
+    overflow: hidden; /* Hide content when collapsed */
+}
+
+/* Right Panel Heading Styling */
+.right-panel h1 {
+    margin-bottom: 20px;
+}
+
+/* Layout Image Styling */
+.layout-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 40px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+/* Result Section Styling */
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 100%;
+    /* min-height: 300px; */
+}
+.panel-toggle.disabled {
+    cursor: not-allowed;
+    /* opacity: 0.5; You can adjust the opacity value to your preference */
+    pointer-events: none; /* This will ensure that the button is not clickable */
+    visibility: hidden;
+}

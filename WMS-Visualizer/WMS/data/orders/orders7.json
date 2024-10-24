@@ -1,0 +1,20 @@
+[
+    {
+        "items": [
+            {
+                "id": 21,
+                "name": "Blue Diamond Almonds",
+                "quantity": 3000,
+                "volume": 450,
+                "cover": 20
+            },
+            {
+                "id": 10,
+                "name": "Listerine Cool Mint Mouthwash",
+                "quantity": 2400,
+                "volume": 1200,
+                "cover": 10
+            }
+        ]
+    }
+]

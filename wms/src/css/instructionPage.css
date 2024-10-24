@@ -1,0 +1,108 @@
+landing-container {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+    padding: 7rem; /* Reduced padding for a more compact layout */
+    background: linear-gradient(
+      to bottom right,
+      #f9f9f9,
+      #e0e0e0
+    ); /* Gradient background */
+    border-radius: 1rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    margin: 0 auto; /* Center container */
+    max-width: 900px; /* Set a max width for the content */
+    position: relative; /* Relative positioning for inner elements */
+    opacity: 0; /* Start invisible for animation */
+    animation: fadeIn 1s forwards; /* Apply fade-in animation */
+  }
+   
+  .landing-title {
+    font-size: 3rem; /* Increased size for emphasis */
+    font-weight: bold;
+    color: #3c3c8f;
+    margin-bottom: -0.5rem; /* Increased margin for better spacing */
+    text-transform: uppercase; /* Uppercase title for emphasis */
+    letter-spacing: 2px; /* Slightly increased letter spacing */
+    opacity: 0; /* Start invisible for animation */
+    transform: translateY(-20px); /* Start above its position */
+    animation: titleFadeIn 0.8s forwards 0.5s; /* Apply title fade-in animation */
+    /* margin-top: -3rem; */
+  }
+   
+  .landing-subtitle {
+    font-size: 1.8rem; /* Slightly increased size for visibility */
+    color: #6c6c6c;
+    /* margin-bottom: 2rem; */
+  }
+   
+  .instructions {
+    background-color: #ffffff;
+    padding: 40px; /* Increased padding for better content spacing */
+    border-radius: 10px;
+    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
+    margin-bottom: 2rem;
+    /* transition: transform 0.3s; Smooth scale transition */
+  }
+   
+  .instructions:hover {
+    transform: scale(1.02); /* Slightly scale up on hover */
+  }
+   
+  .instructions ol {
+    text-align: left;
+    font-size: 1.2rem; /* Increased font size for better readability */
+    color: #333;
+    line-height: 1.4; /* Adjusted line height */
+  }
+   
+  .instructions ol li {
+    margin-bottom: 15px; /* Increased spacing between items */
+    position: relative; /* For pseudo-element */
+    padding-left: 30px; /* Indent list items more */
+  }
+   
+  .instructions ol li:before {
+    content: "✔"; /* Checkmark before each list item */
+    position: absolute;
+    left: 0;
+    color: #3c3c8f; /* Match title color */
+    font-size: 1.4rem; /* Slightly larger checkmark */
+  }
+   
+  .action-message {
+    font-size: 1.6rem; /* Increased size for visibility */
+    font-weight: bold;
+    color: #0056b3;
+    margin-top: 0; /* Increased margin for better spacing */
+  }
+   
+  /* Fade-in animation for container */
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* Start fully transparent */
+      transform: translateY(20px); Optional: slight upward movement
+    }
+    to {
+      opacity: 1; /* End fully opaque */
+      transform: translateY(0); /* End at original position */
+    }
+  }
+   
+  /* Title fade-in animation */
+  @keyframes titleFadeIn {
+    from {
+      opacity: 0; /* Start fully transparent */
+      transform: translateY(-20px); /* Start above its position */
+    }
+    to {
+      opacity: 1; /* End fully opaque */
+      transform: translateY(0); /* End at original position */
+    }
+  }
+   
+  

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warehouse Visualization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #warehouseData {
+            white-space: pre-wrap; /* Preserve whitespace formatting */
+        }
+    </style>
+</head>
+<body>
+    <h1>Warehouse Data - Aisle Items</h1>
+    <div id="warehouseData">
+        <!-- Warehouse data will be displayed here -->
+    </div>
+
+    <script>
+        // Embed Python data into JavaScript
+        const warehouseData = {{ warehouse_items | tojson | safe }};
+        console.log("warehouse data = ", warehouseData); // For debugging
+        
+        // Get the aisle items array
+        const aisleItems = warehouseData.aisle_items;
+
+        // // Get the container to display items
+        // const container = document.getElementById('warehouseData');
+
+        // // Display each item line by line
+        // aisleItems.forEach(item => {
+        //     const div = document.createElement('div');
+        //     div.textContent = item;
+        //     div.className = 'item';
+        //     container.appendChild(div);
+        // });
+    </script>
+</body>
+</html>

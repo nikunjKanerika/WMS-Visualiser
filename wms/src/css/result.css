@@ -1,0 +1,58 @@
+.resultt {
+    display: flex;
+    flex-direction: column;
+    /* height: 250px; */
+    width: 110%;
+    /* border-bottom: 2px solid #888; */
+    margin-bottom: 20px;
+    margin-top: -10px;
+    /* border: 1px solid black; */
+}
+
+
+
+.resultt p {
+    margin-bottom: 2px;
+}
+
+.resultt-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.resultt-tag {
+    margin-top: 8px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff5f3d;
+}
+
+
+.profit-input-container {
+    display: flex;
+    /* padding: 4px; */
+    margin-top: -10px;
+}
+
+.profit-input {
+    /* margin-top: 10px; */
+    margin-right: 40px;
+}
+
+.profit-label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1664df
+}
+
+.profit-value {
+    width: 147px;
+    height: 25px;
+}
+
+.profit {
+    /* margin-top: 20px; */
+    font-size: 20px;
+    font-weight: bold;
+    color:#ff5f3d;
+}

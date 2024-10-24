@@ -1,0 +1,41 @@
+[
+    {
+        "items": [
+            {
+                "id": 26,
+                "name": "Coca-Cola Classic",
+                "quantity": 4900,
+                "volume": 300,
+                "cover": 10
+            },
+            {
+                "id": 1,
+                "name": "Organic Valley Eggs",
+                "quantity": 5650,
+                "volume": 600,
+                "cover": 7
+            },
+            {
+                "id": 27,
+                "name": "Gatorade Thirst Quencher",
+                "quantity": 3100,
+                "volume": 400,
+                "cover": 7
+            },
+            {
+                "id": 1,
+                "name": "Organic Valley Eggs",
+                "quantity": 5650,
+                "volume": 600,
+                "cover": 7
+            },
+            {
+                "id": 7,
+                "name": "Kleenex Ultra Soft Tissues",
+                "quantity": 3670,
+                "volume": 400,
+                "cover": 30
+            }
+        ]
+    }
+]

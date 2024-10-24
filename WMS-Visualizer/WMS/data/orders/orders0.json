@@ -1,0 +1,20 @@
+[
+    {
+        "items": [
+            {
+                "id": 4,
+                "name": "Tide Liquid Laundry Detergent",
+                "quantity": 2820,
+                "volume": 1500,
+                "cover": 14
+            },
+            {
+                "id": 26,
+                "name": "Coca-Cola Classic",
+                "quantity": 4900,
+                "volume": 300,
+                "cover": 10
+            }
+        ]
+    }
+]

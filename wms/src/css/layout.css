@@ -1,0 +1,24 @@
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 50px; */
+    /* align-items: center; */
+    /* Margin above the Rack View title */
+}
+
+.warehouse-layout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* background-color: #1664df; */
+    margin-top: 30px;
+    justify-content: center;
+    margin-left: 75px;
+}
+.presentWarehouse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: #1664df;
+}

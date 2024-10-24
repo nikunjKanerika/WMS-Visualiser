@@ -1,0 +1,27 @@
+[
+    {
+        "items": [
+            {
+                "id": 18,
+                "name": "Hershey's Milk Chocolate Bars",
+                "quantity": 2500,
+                "volume": 300,
+                "cover": 15
+            },
+            {
+                "id": 1,
+                "name": "Organic Valley Eggs",
+                "quantity": 5650,
+                "volume": 600,
+                "cover": 7
+            },
+            {
+                "id": 10,
+                "name": "Listerine Cool Mint Mouthwash",
+                "quantity": 2400,
+                "volume": 1200,
+                "cover": 10
+            }
+        ]
+    }
+]

@@ -1,0 +1,52 @@
+.cell {
+    width: 75px;
+    height: 50px;
+    border: 2px solid white;
+    box-sizing: border-box;
+    padding: 2px;
+    background-color:#1664df;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cell:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+.cell-data-view {
+    position: absolute;
+    top: -10px;
+    left: 35px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 250px;
+    z-index: 9999; /* High z-index to ensure it appears above the rack */
+    border-radius: 5px;
+}
+
+.cell-data-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.cell-info-table {
+    width: 100%;
+}
+
+.cv-label {
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.cv-info-name,
+.cv-info {
+    text-align: right;
+}

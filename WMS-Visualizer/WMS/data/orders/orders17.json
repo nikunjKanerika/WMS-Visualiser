@@ -1,0 +1,13 @@
+[
+    {
+        "items": [
+            {
+                "id": 26,
+                "name": "Coca-Cola Classic",
+                "quantity": 4900,
+                "volume": 300,
+                "cover": 10
+            }
+        ]
+    }
+]

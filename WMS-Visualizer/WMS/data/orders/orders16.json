@@ -1,0 +1,27 @@
+[
+    {
+        "items": [
+            {
+                "id": 10,
+                "name": "Listerine Cool Mint Mouthwash",
+                "quantity": 2400,
+                "volume": 1200,
+                "cover": 10
+            },
+            {
+                "id": 20,
+                "name": "Perrier Sparkling Natural Mineral Water",
+                "quantity": 4100,
+                "volume": 350,
+                "cover": 10
+            },
+            {
+                "id": 30,
+                "name": "Doritos Nacho Cheese Tortilla Chips",
+                "quantity": 3300,
+                "volume": 500,
+                "cover": 10
+            }
+        ]
+    }
+]

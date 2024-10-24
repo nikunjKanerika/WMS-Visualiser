@@ -1,0 +1,126 @@
+
+.warehouse-info {
+    background-color: #ffffff; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    margin-left: 2px; 
+    width: 450px; 
+    /* transition: transform 0.2s; */
+}
+
+/* .warehouse-info:hover {
+    transform: translateY(-5px);
+} */
+
+.wh-info-table {
+    width: 100%; 
+    border-collapse: collapse;
+}
+
+.wh-info-label {
+    font-weight: bold;
+    font-size: 20px;
+    color: #333333; /* Dark text color for labels */
+    padding: 10px 0;
+}
+
+.wh-info-value {
+    text-align: right; /* Align values to the right */
+    color: #666666; /* Slightly lighter text color for values */
+    padding: 10px 0;
+    font-size: 20px;    
+}
+
+/* .wh-info-label, .wh-info-value {
+    /* border-bottom: 1px solid #e0e0e0;  
+} */
+
+.wh-info-table tr:last-child .wh-info-label,
+.wh-info-table tr:last-child .wh-info-value {
+    border-bottom: none; 
+}
+
+.panel-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+}
+.info-panel-title{
+    font-size: 30px;
+    font-weight: bold;
+    color: #333333;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.panel-cell-title{
+    font-size: 30px;
+    font-weight: bold;
+    color: #333333;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* margin-left: 30px; */
+}
+
+/* Styling for the Cell View card */
+.cell-view {
+    margin-left:10px;
+    background-color: #ffffff; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 10px; 
+    /* margin: 20px;  */
+    width: 470px; 
+    transition: transform 0.2s;
+}
+
+/* .cell-view:hover {
+    transform: translateY(-5px); Slight lift on hover for interactivity
+} */
+
+/* Styling for the cell info table */
+.cell-info-table {
+    width: 100%; /* Full width of the card */
+    border-collapse: collapse; /* Clean look by collapsing borders */
+}
+
+/* Label cells styling */
+.cv-label {
+    font-weight: bold;
+    color: #333333; /* Dark color for labels */
+    padding: 10px 0; /* Vertical padding for spacing */
+    font-size: 20px;
+}
+
+/* Information cells styling */
+.cv-info, .cv-info-name {
+    text-align: right; /* Align the values to the right */
+    color: #666666; /* Slightly lighter text color for values */
+    padding: 3px 0; /* Vertical padding for spacing */
+    font-size: 18px;
+    width: 60%;
+}
+
+/* Border styling for rows */
+.cv-label, .cv-info, .cv-info-name {
+    border-bottom: 1px solid #e0e0e0; /* Light gray border for row separation */
+}
+
+/* Remove bottom border from the last row */
+.cell-info-table tr:last-child .cv-label,
+.cell-info-table tr:last-child .cv-info,
+.cell-info-table tr:last-child .cv-info-name {
+    border-bottom: none;
+}
+
+/* Empty cell message styling */
+.empty-cell {
+    color: #ff5f3d; /* Gray color to indicate inactive state */
+    font-style: italic;
+    text-align: center;
+    font-size: 25px;
+    /* padding: 20px; */
+}
